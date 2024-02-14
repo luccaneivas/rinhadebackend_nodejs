@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { router as homepage } from "./app/routes/homepage";
+import { router as clientes } from "./app/routes/ClientesRouter";
 
 const router: Router = Router();
 
-router.get("/", homepage);
+router.use("/clientes", clientes);
 
 export { router };
